@@ -13,10 +13,10 @@ dotenv.config();
 const PORT_NUMBER = process.env.PORT ?? 4000;
 
 app.get("/", (req, res) => {
-    const pathToFile = filePath("../public/index.html");
-    res.sendFile(pathToFile)
-})
+  const pathToFile = filePath("../public/index.html");
+  res.sendFile(pathToFile);
+});
 
 app.listen(PORT_NUMBER, () => {
-    console.log(`Server is listneing on port ${PORT_NUMBER}!`);
-})
+  console.log(`Server is listneing on port ${PORT_NUMBER}!`);
+});
